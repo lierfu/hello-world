@@ -1,0 +1,30 @@
+// 3.9.1_drill_simple_form_letter_based_on_user_input_v1.0
+#include <iostream>
+#include <string>
+
+int main()
+{
+    
+    
+std::string first_name;
+
+std::cout << "Enter the name of the person you want to write to: \n";
+
+std::cin>> first_name;
+std::cout << "Dear " << first_name << ", " << endl ;
+std::cout << "  How are you? I am fine.   " << first_name << ", ";
+std::cout << "Enter the name of your friend: \n";
+
+std::string friend_name;
+std::cin>> friend_name;
+std::cout << "Have you seen " << friend_name << " lately?" << endl;
+
+char friend_sex = 0;
+std::cout << "Gender of your friend: 'm' for male and 'f' for female; " << endl ;
+std::cin>> friend_sex;
+if (
+
+
+
+return 0;
+}
