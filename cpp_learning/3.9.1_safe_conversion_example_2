@@ -1,0 +1,21 @@
+// 3.9.1_safe_conversion_example_2
+#include <iostream>
+#include <string>
+
+int main()
+{
+
+double x {2.7};
+int y{x};
+
+std::cout<< x  << "\n" ;
+std::cout<< y  << "\n" ;
+
+int a {1000};
+char b {a};
+
+std::cout<< a  << "\n" ;
+std::cout<< b  << "\n" ;
+
+return 0;
+}
