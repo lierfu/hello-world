@@ -1,7 +1,6 @@
 // 3.9.1_drill_simple_form_letter_based_on_user_input
 #include <iostream>
 #include <string>
-#include <std_lib_facilities.h>
 
 int main()
 {
@@ -12,64 +11,106 @@ std::string first_name;
 std::cout << "Enter the name of the person you want to write to: \n";
 
 std::cin>> first_name;
-std::cout << "Dear " << first_name << ", " << std::endl ;
-std::cout << "  How are you? I am fine.   " << std::endl;
+std::cout << "\n\nDear " << first_name << ", \n\n" << std::endl ;
+std::cout << "  How are you? I am fine.   \n\n" << std::endl;
 std::cout << "Enter the name of your friend: \n";
 
 std::string friend_name;
 std::cin>> friend_name;
-std::cout << "Have you seen " << friend_name << " lately?" << std::endl;
+std::cout << "\n\n  Have you seen " << friend_name << " lately?\n\n" << std::endl;
 
 char friend_sex = 0;
 std::cout << "Gender of your friend: 'm' for male and 'f' for female; " <<  std::endl ;
 std::cin>> friend_sex;
 
 
-if ( friend_sex == 'm') {
-    std::cout << "If you see " << friend_name << " please ask him to call me." <<  std::endl;
-    
-}
+if (friend_sex == 'm') 
+        std::cout << "\n\n    If you see " << friend_name << " please ask him to call me." <<  std::endl;
 
-else {
-        if( friend_sex == 'f') {
-        
-         std::cout << "If you see " << friend_name << " please ask her to call me." <<  std::endl;
-         
-    }
+    else if( friend_sex == 'f')         
+        std::cout << "If you see " << friend_name << " please ask her to call me." <<  std::endl;
     
-    else {
-        
+    else 
+    { 
         std::cout<< "Please enter 'm' for male, 'f' for female" <<  std::endl;
+        std::cin>> friend_sex;
     }
-
-    
-}
 
 int age =0;
-std::cout << "What is the age of the person you are writing to? " << std::endl;
+std::cout << "\n\nWhat is the age of the person you are writing to? " << std::endl;
 std::cin >> age;
-std::cout << "I hear you just had a birthday and you are " << age << " years old"  << std::endl;
 
-if ( (age <= 0) &&  (age >=110)) {
-    simple_error << "You are kidding!" <<  std::endl;
-    
-}
 
-else {
-        if( friend_sex == 'f') {
-        
-         std::cout << "If you see " << friend_name << " please ask her to call me." <<  std::endl;
-         
-    }
-    
-    else {
-        
-        std::cout<< "Please enter 'm' for male, 'f' for female" <<  std::endl;
-    }
+if ((age >= 110) && (age <= 0))
+			std::cout << "You are kidding" << std::endl;
 
-    
-}
+		else if (age <= 12)
+			std::cout << "\n\nNext year you wil be "<< age+1 <<  std::endl;
+			
+		else if (age == 17)
+			std::cout<< "\n\nNext year you will be able to vote."<<  std::endl;
+
+		else if (age >= 70)
+			std::cout<< "\n\nI hope you are enjoying retirement."<<  std::endl;
+
+		else 
+		{
+			std::cout << "\n\nI hear you just had a birthday and you are " << age << " years old"  << std::endl;
+		}
+
+   
+std::cout << " \n\n\nYous sincerely, \n\n" << std::endl;
+std::cout << "Amandy" << std:: endl;
 
 
 return 0;
 }
+
+
+//3h+
+//What I did wrongly:
+//Firstly, I used If(xxx == "m") instead of If(xxx == 'm')
+//Secondly, using If else like this:
+/*
+
+if (age <= 0) {
+    std::cout << "You are kidding! Please enter the age again!" <<  std::endl;
+     
+    
+}
+
+if (age >=110) {
+    std::cout << "You are kidding! Please enter the age again!" <<  std::endl;
+     
+}
+
+else {
+
+    if( age <= 12 ) {
+        
+         std::cout << " Next year you wil be "<< age+1 <<  std::endl;
+         
+                    }
+    
+    if( age == 17) {
+        
+                 std::cout<< "Next year you will be able to vote."<<  std::endl;
+        
+            }
+            
+                    
+    if ( age >= 70) {
+                        
+            std::cout<< "I hope you are enjoying retirement."<<  std::endl;
+                        
+                 }
+                    
+    else {
+                            
+            std::cout << "I hear you just had a birthday and you are " << age << " years old"  << std::endl;
+
+    }
+    
+}
+
+*/
