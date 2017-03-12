@@ -1,0 +1,21 @@
+// Program in c++ that converts from miels to kilometers
+//12th March 2017
+#include <iostream>
+#include <string>
+
+int main()
+{
+    
+  int miles;
+  float kilometers;
+  
+  std::cout <<  "Miles to kilometers converter" << std::endl;
+  std::cout <<  "==============================\n" << std::endl;
+  std::cout << "Insert number of miles: " << std::endl;
+  std::cin >> miles;
+  kilometers= (float (miles))*1.609;
+  std::cout << miles << " miles are " << kilometers << " kilometers. " << std::endl;
+  
+  return 0;
+  
+}
