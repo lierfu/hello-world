@@ -33,3 +33,6 @@ int main()
     std::cout<< "The product of the two integer is: " << product << std::endl;
     std::cout<< "The ratio of the two integer is: " << ratio << std::endl;
 }
+
+//Reference
+//http://stackoverflow.com/questions/12447325/dividing-two-integers-to-produce-a-float-result
