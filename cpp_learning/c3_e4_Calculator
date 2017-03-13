@@ -1,0 +1,35 @@
+// c3_e4_Calculator
+//A program to calculate the smaller, larger, sum, difference, product,and ratio of two integer
+//13th March 2017
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  int val1, val2;
+  
+  
+  std::cout <<  "Please enter two integer" << std::endl;
+  std::cin >> val1 >> val2;
+  
+  int sum, product;
+  
+  if (val1 > val2) 
+            std::cout<< "The smaller number is:" << val2 
+                     << "\nThe bigger number is: " << val1 << std::endl;
+  else 
+  { 
+            std::cout<< "The smaller number is: " << val1 << std::endl;
+            std::cout<< "The bigger number is: " << val2 << std::endl;
+      }
+        
+        
+    sum= val1 + val2;
+    product = val1*val2;
+    float ratio = float (val1)/float(val2);
+  
+    std::cout<< "The sum of the two integer is: " << sum << std::endl;
+    std::cout<< "The product of the two integer is: " << product << std::endl;
+    std::cout<< "The ratio of the two integer is: " << ratio << std::endl;
+}
