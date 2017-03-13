@@ -1,0 +1,38 @@
+// c3_e5_Calculator_v2
+//A program to calculate the smaller, larger, sum, difference, product,and ratio of two floating number
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  double val1, val2;
+  
+  
+  std::cout <<  "Please enter two floating point values" << std::endl;
+  std::cin >> val1 >> val2;
+  
+  double sum, product;
+  
+  if (val1 > val2) 
+            std::cout<< "The smaller number is:" << val2 
+                     << "\nThe bigger number is: " << val1 << std::endl;
+  else 
+  { 
+            std::cout<< "The smaller number is: " << val1 << std::endl;
+            std::cout<< "The bigger number is: " << val2 << std::endl;
+      }
+        
+        
+    sum= val1 + val2;
+    product = val1*val2;
+    double ratio = double (val1)/double (val2);
+  
+    std::cout<< "The sum of the two integer is: " << sum << std::endl;
+    std::cout<< "The product of the two integer is: " << product << std::endl;
+    std::cout<< "The ratio of the two integer is: " << ratio << std::endl;
+}
+
+
+//Bibiliography
+//http://stackoverflow.com/questions/18130511/unexpected-rounding-of-double-types-in-c-writing-to-file
