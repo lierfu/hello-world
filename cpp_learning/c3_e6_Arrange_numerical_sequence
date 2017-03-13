@@ -1,0 +1,39 @@
+// c3_e6_Arrange_numerical_sequence_v1
+//A program to arrange sequence of numbers 
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  int int1=0, int2=0, int3=0;
+  
+  std::cout <<  "Please enter three integer values" << std::endl;
+  std::cin >> int1 >> int2 >> int3;
+ 
+  
+  if (int1 > int2 && int2 > int3) 
+            std::cout<< "The numerical sequence of the numbers are: " << int1 << ", " << int2 << ", " << int3;
+        else if   (int1 > int3 && int3 > int2) 
+            std::cout<< "The numerical sequence of the numbers are: " << int1 << ", " << int3 << ", " << int2; 
+        else if   (int2 > int1 && int1 > int3)
+            std::cout<< "The numerical sequence of the numbers are: " << int2 << ", " << int1 << ", " << int3; 
+        else if   (int2 > int3 && int3 > int1)
+            std::cout<< "The numerical sequence of the numbers are: " << int2 << ", " << int3 << ", " << int1; 
+        else if   (int3 > int1 && int1 > int2)
+            std::cout<< "The numerical sequence of the numbers are: " << int3 << ", " << int1 << ", " << int2; 
+        else if   (int3 > int2 && int2 > int1)
+            std::cout<< "The numerical sequence of the numbers are: " << int3 << ", " << int2 << ", " << int1; 
+            
+  else { 
+            std::cout<< "" <<; 
+      }
+        
+return 0;
+
+}
+
+
+
+//Reference
+// http://www.cplusplus.com/forum/beginner/83385/
