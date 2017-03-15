@@ -1,0 +1,37 @@
+// c3_e9_Word_to_values_converter
+//A program to convert words to values
+// 15th March 2017
+//Problems: Cannot convert string to bool
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string s1;
+  std::cin >> s1;
+ 
+  if (s1 == "zero")
+            std::cout<< "The value " <<" is " << " 0. " << std::endl;
+        else if (s1 = "one")
+            std::cout<< "The value " <<" is " << " 1. " << std::endl;
+         else if (s1 = "two")
+            std::cout<< "The value " <<" is " <<  " 2. " << std::endl;
+        else if (s1 = "three")
+            std::cout<< "The value " <<" is " <<  " 3. " << std::endl;
+        else if (s1 = "four")
+            std::cout<< "The value " <<" is " <<  " 4. " << std::endl;
+        
+        
+  else 
+  { 
+            std::cout<< "Opps, not a number I know ; " << std::endl;
+      }
+      
+return 0;
+        
+
+}
+
+//Bibiliography
+
