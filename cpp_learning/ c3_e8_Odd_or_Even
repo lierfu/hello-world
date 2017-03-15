@@ -1,0 +1,33 @@
+// c3_e8_Odd_or_Even
+//A program to determine odd or even number by using modulo operator
+// 15th March 2017
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  int int1=0;
+  
+  
+  std::cout <<  "Please enter an integer" << std::endl;
+  std::cin >> int1;
+  
+  double divide = int1 % 2;
+
+  if (divide == 0)
+            std::cout<< "The value " << int1 << " is an even number." << std::endl;
+                    
+  else 
+  { 
+            std::cout<< "The value " << int1 << " is an odd number." << std::endl;
+      }
+      
+      std::cout << divide ;
+        
+
+}
+
+
+//Bibiliography
+//http://www.cplusplus.com/doc/tutorial/operators/
