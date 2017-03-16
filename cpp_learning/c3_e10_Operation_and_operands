@@ -1,0 +1,39 @@
+// c3_e10_Operation_and_operands
+//A program that takes an operation followed by two operands and outputs the result.
+// 16th March 2017
+
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::string operation, s1, s2;
+  double val1 = 0; 
+  double val2 = 0;
+  
+  
+  std::cout << "Please enter an operation (+, -, *, /, plus, minus, mul, div) followed by two floating-point values separated by a space: ";
+  std::cin >> operation >> val1 >> val2;
+    
+  double res;
+  if (operation == "+" || operation == "plus" ) res = val1+val2;   
+    else if (operation == "-" || operation == "minus" ) res = val1-val2;  
+    else if (operation == "*" || operation == "multiply" ) res = val1*val2;  
+    else if (operation == "/" || operation == "divide" ) res = val1/val2;  
+    
+    else { 
+            std::cout<< "Opps, bad operators ; " << std::endl;
+      }
+      
+      
+      
+std::cout << val1 << operation << val2 << " == " << res <<'\n';
+
+return 0;
+        
+
+}
+
+//Bibiliography
+//http://www.stroustrup.com/Programming/Solutions/Ch3/e3-10.cpp
