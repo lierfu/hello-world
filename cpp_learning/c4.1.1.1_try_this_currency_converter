@@ -1,0 +1,42 @@
+
+// c4.1.1.1_try_this_1_Currency_converter
+//A program that converts yen, euros, and pounds into dollars.
+//A suffix 'y' or 'e' 'p' 'd' indicates the unit of the input
+//any other suffix is an error
+// 31th March 2017
+
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+  
+constexpr double yen_to_dollars = 0.15; 
+constexpr double euro_to_dollars = 1.07; 
+constexpr double pounds_to_dollars = 1.26; 
+
+double amount = 1;
+char unit = ' '; // a space is not a unit
+
+std::cout << "Please enter a currency amount to be converted to dollars, followed by a unit (y for yen, e for euro, p for pounds): \n";
+std::cin >> amount >> unit;
+
+if (unit =='y')
+        std::cout << amount << "yen == " << yen_to_dollars*amount << " dollars\n";
+        
+    else if (unit == 'e')
+        std::cout << amount << "euro == " << euro_to_dollars*amount << " dollars\n";
+        
+    else if (unit == 'p')
+        std::cout << amount << "pounds == " << pounds_to_dollars*amount << " dollars\n";
+    
+else
+    std::cout << "Sorry, I don't know a unit called'" << unit << "'\n";
+    
+return 0;
+
+}
+
+      
+        
