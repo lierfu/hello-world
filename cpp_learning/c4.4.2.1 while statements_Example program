@@ -1,0 +1,21 @@
+// 4.4.2.1 while statements_Example program
+#include <iostream>
+#include <string>
+#include <cmath>
+
+int square(int x) {  // function declared and implemented
+    return x*x;
+}
+
+int main()
+{
+    
+int i =0; // start from 0
+while (i<100){
+    std::cout << i << 't' << square (i) << '\n';
+    ++i; //increment i (that is, i becomes i+1)
+}
+}
+
+// Bibiliography
+// http://stackoverflow.com/questions/36481846/square-was-not-declared-in-this-scope
