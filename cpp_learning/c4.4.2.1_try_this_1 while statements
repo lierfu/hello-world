@@ -1,0 +1,19 @@
+// 4.4.2.1_try_this_1 while statements
+#include <iostream>
+#include <string>
+
+int main()
+{
+    
+int i =97; // start from 0
+char letter = 'a'; // start from a
+
+while (i<123){
+    std::cout << letter << ' ' << i << '\n';
+    ++i; //increment i (that is, i becomes i+1)
+    ++letter; //increment a (that is, i becomes a+1 = b )
+}
+}
+
+// bibiliography
+// http://stackoverflow.com/questions/8487255/how-do-i-increment-letters-in-c
