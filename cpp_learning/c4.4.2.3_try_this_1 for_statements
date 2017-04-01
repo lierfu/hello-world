@@ -1,0 +1,19 @@
+// 4.4.2.3_try_this_1 for_statements
+#include <iostream>
+#include <string>
+
+int main()
+{
+    
+int i;
+char letter = 'A';
+
+for (i = 97; i<123; ++i,++letter)  
+    std::cout << letter << ' ' << i << '\n';
+
+}
+
+// bibiliography
+// http://stackoverflow.com/questions/2687392/is-it-possible-to-declare-two-variables-of-different-types-in-a-for-loop
+
+
