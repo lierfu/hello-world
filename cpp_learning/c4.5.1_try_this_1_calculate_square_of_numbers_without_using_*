@@ -1,0 +1,24 @@
+// 4.5.1_try_this_1_calculate_square_of_numbers_without_using_*
+
+#include <iostream>
+#include <string>
+
+int square (int n) //return the square of x
+{
+    int res = 0;    //initialize result
+    for (int i=0; i<n; i++) //add n to res n-1 times
+          res+= n;  
+    return res;
+        
+}
+
+int main () {
+    
+    for (int n=1; n<100; ++n) 
+        std::cout << square (n) << '\t' <<std::endl;
+ 
+return 0;
+}
+
+//bibiliography
+// http://www.geeksforgeeks.org/calculate-square-of-a-number-without-using-and-pow/
